@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    namespace 'com.e2eelite.demo'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.e2eelite.demo"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation project(':library')
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}
